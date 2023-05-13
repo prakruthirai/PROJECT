@@ -33,7 +33,7 @@ public class PaymentModule extends JFrame {
         amountLabel = new JLabel("Amount:");
         amountLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        amountTextField = new JTextField(20);
+        amountTextField = new JTextField("15000",20);
         amountTextField.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         cardNumberLabel = new JLabel("Card Number:");
