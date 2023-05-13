@@ -17,7 +17,7 @@ public class Loginpage extends JFrame {
     private JButton loginButton;
 
     public Loginpage() {
-        setTitle("Admin Login");
+        setTitle("Login");
         setSize(500, 300);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
