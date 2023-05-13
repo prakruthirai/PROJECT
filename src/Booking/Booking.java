@@ -71,21 +71,22 @@ public class Booking extends JFrame {
 
         // Set the window size and make it visible
         setSize(400, 250);
-        setVisible(true);}
+        setVisible(true);
 
         
-
-        private void showbookingpage(){
-            // headerLabel.setText("Welcome to Airline Reservation System");
-    
-            JButton bookButton = new JButton("Book");
-            // JButton registerButton = new JButton("Register");
-            // JButton adminButton = new JButton("Admin");
-            bookButton.addActionListener(new ActionListener() {
-                public void actionPerformed(ActionEvent e) {
-                    new PaymentModule();
-                }
-            });
+        bookButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Handle book button action
+                // Redirect to the payment module page or perform necessary actions
+                
+                // Create an instance of the PaymentModulePage
+                PaymentModule paymentPage = new PaymentModule();
+                paymentPage.setVisible(true);
+                
+                // Close the current BookingPage
+                dispose();
+            }
+        });
 
     }
 
